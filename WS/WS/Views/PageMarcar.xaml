@@ -9,7 +9,7 @@
             <Label Text="Diástole:" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold"/>
             <Entry x:Name="txtDiastole" Placeholder="Digite o valor da Diástole" Keyboard="Numeric"/>
             <StackLayout Margin="50">
-                <Button x:Name="btnGravar" CornerRadius="15" Text="Marcar" BackgroundColor="Cyan" FontAttributes="Bold" FontSize="Medium" Clicked="btnGravar_Clicked" />
+                <Button x:Name="btnGravar" CornerRadius="15" Text="Gravar" BackgroundColor="Cyan" FontAttributes="Bold" FontSize="Medium" Clicked="btnGravar_Clicked" />
             </StackLayout>
         </StackLayout>
         

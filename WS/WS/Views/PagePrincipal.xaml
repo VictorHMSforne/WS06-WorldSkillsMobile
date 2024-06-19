@@ -5,10 +5,10 @@
     <ContentPage.Content>
         <StackLayout Margin="20">
             <Label Text="Sístole:" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold"/>
-            <Label Text="99" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold"/>
+            <Label x:Name="lblSistole"  Text="" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold"/>
             <Label Text="_______________" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Title"/>
             <Label Text="Diástole:" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold"/>
-            <Label Text="99" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold"/>
+            <Label x:Name="lblDiastole"  Text="" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold"/>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand">
                 <Button x:Name="btnMarcar" CornerRadius="15" Text="Marcar" BackgroundColor="PaleVioletRed" FontAttributes="Bold" FontSize="Medium" Clicked="btnMarcar_Clicked"/>

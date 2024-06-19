@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using WS.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +15,11 @@ namespace WS.Views
         public PagePrincipal()
         {
             InitializeComponent();
+            string dbPath = "";
+            ServiceDBCardio dBCardio = new ServiceDBCardio(dbPath);
+
+            lblSistole.Text = dBCardio.MediaSis().ToString("F");
+            lblDiastole.Text = dBCardio.MediaDias().ToString("F");
         }
 
         private void btnMarcar_Clicked(object sender, EventArgs e)

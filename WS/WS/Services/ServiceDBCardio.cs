@@ -11,6 +11,7 @@ namespace WS.Services
     {
         SQLiteConnection conn;
 
+
         public string StatusMessage { get; set; }
         public ServiceDBCardio(string dbPath)
         {
@@ -55,6 +56,34 @@ namespace WS.Services
                 throw new Exception(erro.Message);
             }
             return lista;
+        }
+        public double  MediaSis()
+        {
+            try
+            {
+                string sql = "SELECT AVG(Sistole) AS MediaSis FROM PressaoArterial";
+                var result = conn.ExecuteScalar<double>(sql);
+                return result;
+
+            }
+            catch (Exception er) 
+            {
+                throw new Exception(er.Message);
+            }
+        }
+        public double MediaDias()
+        {
+            try
+            {
+                string sql = "SELECT AVG(Diastole) AS MediaDias FROM PressaoArterial";
+                var result = conn.ExecuteScalar<double>(sql);
+                return result;
+
+            }
+            catch (Exception er)
+            {
+                throw new Exception(er.Message);
+            }
         }
     }
 }
