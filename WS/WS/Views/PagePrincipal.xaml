@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WS.Views.PagePrincipal" Title="Home">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="Sístole:" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold"/>
+            <Label Text="99" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold"/>
+            <Label Text="_______________" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Title"/>
+            <Label Text="Diástole:" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold"/>
+            <Label Text="99" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand">
+                <Button x:Name="btnMarcar" CornerRadius="15" Text="Marcar" BackgroundColor="PaleVioletRed" FontAttributes="Bold" FontSize="Medium" Clicked="btnMarcar_Clicked"/>
+                <Button x:Name="btnHistorico" CornerRadius="15" Text="Histórico" BackgroundColor="LightGreen" FontAttributes="Bold" FontSize="Medium" Clicked="btnHistorico_Clicked" />
+                <Button x:Name="btnSair" CornerRadius="15" Text="Sair" BackgroundColor="OrangeRed" FontAttributes="Bold" FontSize="Medium" Clicked="btnSair_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
